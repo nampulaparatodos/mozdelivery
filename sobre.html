@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MozDelivery — Sobre Nós</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* ── PAGE SPECIFIC ── */
+.page-hero {
+  background: var(--teal);
+  padding: 48px 20px 40px;
+  color: #fff;
+  text-align: center;
+}
+.page-hero h1 { font-size: 1.9rem; font-weight: 700; letter-spacing: -.4px; }
+.page-hero p { font-size: .9rem; opacity: .88; margin-top: 8px; max-width: 420px; margin-left: auto; margin-right: auto; }
+
+.about-img {
+  width: 100%; height: 220px;
+  object-fit: cover;
+  border-radius: 18px;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-md);
+}
+
+.value-card {
+  background: #fff;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  padding: 20px;
+  display: flex; gap: 14px; align-items: flex-start;
+}
+.value-icon {
+  width: 44px; height: 44px; border-radius: 12px;
+  background: var(--teal-light);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem; flex-shrink: 0;
+}
+.value-card strong { font-size: .92rem; font-weight: 600; display: block; margin-bottom: 4px; }
+.value-card p { font-size: .82rem; color: var(--text2); line-height: 1.55; }
+
+.team-card {
+  background: #fff;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+.team-img {
+  width: 100%; height: 160px; object-fit: cover;
+  filter: saturate(1.05);
+}
+.team-body { padding: 14px; }
+.team-body strong { font-size: .9rem; font-weight: 600; display: block; }
+.team-body span { font-size: .78rem; color: var(--teal); font-weight: 500; }
+
+/* Desktop about layout */
+@media(min-width:900px) {
+  .page-hero { padding: 72px 60px 60px; }
+  .page-hero h1 { font-size: 3rem; }
+  .page-hero p { font-size: 1.05rem; max-width: 560px; }
+  .about-2col { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .about-img { height: 380px; margin-bottom: 0; }
+  .values-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .team-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 20px; }
+  .team-img { height: 200px; }
+  .section { padding: 60px 60px; }
+  .contact-section { padding: 0 60px 60px; }
+  footer { padding: 48px 60px 60px; }
+}
+@media(max-width:899px) {
+  .values-grid { display: flex; flex-direction: column; gap: 12px; }
+  .team-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+  .about-2col { display: block; }
+}
+</style>
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <a href="index.html" class="logo">Moz<span>Delivery</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html">Início</a></li>
+    <li><a href="sobre.html" class="active">Sobre nós</a></li>
+    <li><a href="suporte.html">Suporte</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://wa.me/258856206326" class="nav-wa" target="_blank">💬 WhatsApp</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="page-hero">
+  <h1>Sobre a MozDelivery</h1>
+  <p>Nascemos em Nampula com uma missão simples: aproximar as pessoas dos melhores produtos, de forma rápida e acessível.</p>
+</div>
+
+<!-- ABOUT SECTION -->
+<section class="section">
+  <div class="about-2col">
+    <img
+      src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80"
+      class="about-img" alt="MozDelivery equipa">
+    <div>
+      <div style="display:inline-block;font-size:.75rem;font-weight:600;color:var(--teal);background:var(--teal-light);padding:5px 14px;border-radius:50px;margin-bottom:14px;">
+        A nossa história
+      </div>
+      <h2 style="font-size:1.4rem;font-weight:700;line-height:1.25;letter-spacing:-.3px;margin-bottom:12px;">
+        Entrega com cuidado,<br>qualidade e confiança
+      </h2>
+      <p style="font-size:.88rem;color:var(--text2);line-height:1.7;margin-bottom:12px;">
+        A MozDelivery foi fundada em 2022 por jovens empreendedores de Nampula que sentiram a falta de uma loja online confiável na região. Hoje somos referência em entrega rápida, com centenas de clientes satisfeitos em toda a cidade.
+      </p>
+      <p style="font-size:.88rem;color:var(--text2);line-height:1.7;">
+        O nosso objectivo é simples: levar o melhor da loja à sua porta — sem complicações, sem espera longa, com preços justos e atendimento próximo.
+      </p>
+      <div style="display:flex;gap:28px;margin-top:24px;">
+        <div><strong style="font-size:1.5rem;font-weight:700;color:var(--teal);">3+</strong><p style="font-size:.78rem;color:var(--text3);">Anos de experiência</p></div>
+        <div><strong style="font-size:1.5rem;font-weight:700;color:var(--teal);">1000+</strong><p style="font-size:.78rem;color:var(--text3);">Clientes atendidos</p></div>
+        <div><strong style="font-size:1.5rem;font-weight:700;color:var(--teal);">500+</strong><p style="font-size:.78rem;color:var(--text3);">Produtos disponíveis</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VALUES -->
+<section class="section bg2">
+  <div class="sec-head"><h2>Os nossos valores</h2></div>
+  <div class="values-grid">
+    <div class="value-card">
+      <div class="value-icon">⚡</div>
+      <div><strong>Rapidez</strong><p>Entregamos em 1 a 3 horas em toda a cidade de Nampula. O seu tempo é precioso.</p></div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">🛡️</div>
+      <div><strong>Confiança</strong><p>Produtos verificados, pagamento seguro e garantia de satisfação em cada encomenda.</p></div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">❤️</div>
+      <div><strong>Proximidade</strong><p>Somos da sua cidade. Falamos a mesma língua e conhecemos as suas necessidades.</p></div>
+    </div>
+    <div class="value-card">
+      <div class="value-icon">💰</div>
+      <div><strong>Preços Justos</strong><p>Produtos de qualidade a preços acessíveis. Sem taxas escondidas, sem surpresas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- TEAM -->
+<section class="section">
+  <div class="sec-head"><h2>A nossa equipa</h2></div>
+  <div class="team-grid">
+    <div class="team-card">
+      <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=300&q=80" class="team-img" alt="CEO">
+      <div class="team-body">
+        <strong>Carlos Nhantumbo</strong>
+        <span>Fundador & CEO</span>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="https://images.unsplash.com/photo-1494790108755-2616b612b7c0?w=300&q=80" class="team-img" alt="Ops">
+      <div class="team-body">
+        <strong>Fátima Macamo</strong>
+        <span>Operações</span>
+      </div>
+    </div>
+    <div class="team-card">
+      <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=300&q=80" class="team-img" alt="Entregas">
+      <div class="team-body">
+        <strong>João Mussa</strong>
+        <span>Chefe de Entregas</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <div class="contact-banner">
+    <h2>Faça parte da família MozDelivery</h2>
+    <p>Encomende agora e experiencie a diferença de uma entrega feita com cuidado.</p>
+    <div class="contact-links">
+      <a href="https://wa.me/258856206326" target="_blank" class="contact-link">
+        <div class="c-icon">💬</div>
+        <div><strong>WhatsApp</strong><span>856 206 326</span></div>
+      </a>
+      <a href="index.html" class="contact-link">
+        <div class="c-icon">🛍️</div>
+        <div><strong>Ver Produtos</strong><span>Catálogo completo</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Moz<span>Delivery</span></div>
+      <p style="max-width:260px;">A sua loja de confiança em Nampula.</p>
+    </div>
+    <div>
+      <p style="font-weight:600;margin-bottom:14px;font-size:.9rem;">Páginas</p>
+      <div class="footer-links" style="flex-direction:column;gap:10px;">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="suporte.html">Suporte</a>
+      </div>
+    </div>
+    <div>
+      <p style="font-weight:600;margin-bottom:14px;font-size:.9rem;">Contacto</p>
+      <div class="footer-links" style="flex-direction:column;gap:10px;">
+        <a href="https://wa.me/258856206326">💬 WhatsApp</a>
+        <a href="tel:+258856206326">📞 856 206 326</a>
+        <a href="#">📍 Nampula</a>
+      </div>
+    </div>
+    <div></div>
+  </div>
+  <div class="footer-logo">Moz<span>Delivery</span></div>
+  <p>A sua loja de confiança em Nampula.</p>
+  <div class="footer-links">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="suporte.html">Suporte</a>
+  </div>
+  <p class="copy">© 2025 MozDelivery · Nampula, Moçambique</p>
+</footer>
+
+<a href="https://wa.me/258856206326" class="wa-float" target="_blank">💬</a>
+
+<nav class="bottom-nav">
+  <button class="bn-item" onclick="location.href='index.html'"><span class="bn-icon">🏠</span>Início</button>
+  <button class="bn-item active"><span class="bn-icon">ℹ️</span>Sobre</button>
+  <button class="bn-item" onclick="location.href='suporte.html'"><span class="bn-icon">🎧</span>Suporte</button>
+  <button class="bn-item" onclick="location.href='index.html#produtos'"><span class="bn-icon">🛍️</span>Produtos</button>
+</nav>
+
+</body>
+</html>

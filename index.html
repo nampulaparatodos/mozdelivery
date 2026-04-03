@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MozDelivery — Início</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- TOP NAV -->
+<nav class="topnav">
+  <a href="index.html" class="logo">Moz<span>Delivery</span></a>
+  <ul class="nav-links">
+    <li><a href="index.html" class="active">Início</a></li>
+    <li><a href="sobre.html">Sobre nós</a></li>
+    <li><a href="suporte.html">Suporte</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://wa.me/258856206326" class="nav-wa" target="_blank">💬 WhatsApp</a>
+    <button class="cart-btn" onclick="openCart()">
+      🛒<span class="cart-dot" id="cartDot"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ═══ HERO — MOBILE ═══ -->
+<section class="hero-mobile" style="background:var(--bg2);padding:28px 20px 0;overflow:hidden;">
+  <div style="display:inline-flex;align-items:center;gap:6px;font-size:.75rem;font-weight:600;color:var(--teal);background:var(--teal-light);padding:5px 12px;border-radius:50px;margin-bottom:12px;">
+    📍 Entrega em Nampula
+  </div>
+  <h1 style="font-size:1.75rem;font-weight:700;line-height:1.2;letter-spacing:-.4px;">A loja que chega até você</h1>
+  <p style="font-size:.9rem;color:var(--text2);line-height:1.65;margin-top:8px;">Electrónica, moda, beleza, casa e muito mais. Encomende agora e receba hoje mesmo.</p>
+  <div style="display:flex;gap:10px;margin-top:20px;flex-wrap:wrap;">
+    <a href="#produtos" class="btn-teal">🛍️ Ver produtos</a>
+    <a href="suporte.html" class="btn-outline">Como funciona</a>
+  </div>
+  <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=800&q=80"
+    style="width:100%;height:210px;object-fit:cover;border-radius:18px 18px 0 0;margin-top:24px;" alt="Entrega Nampula">
+</section>
+
+<!-- ═══ HERO — DESKTOP ═══ -->
+<div class="hero-desktop">
+  <div class="hero-text">
+    <div style="display:inline-flex;align-items:center;gap:6px;font-size:.78rem;font-weight:600;color:var(--teal);background:var(--teal-light);padding:6px 16px;border-radius:50px;margin-bottom:18px;">
+      📍 Entrega em Nampula — rápida e segura
+    </div>
+    <h1>A loja que<br>chega até você</h1>
+    <p>Electrónica, moda, beleza, casa e muito mais. Encomende agora e receba hoje mesmo em toda a cidade.</p>
+    <div style="display:flex;gap:12px;margin-top:28px;flex-wrap:wrap;">
+      <a href="#produtos" class="btn-teal" style="font-size:.95rem;padding:14px 28px;">🛍️ Ver produtos</a>
+      <a href="suporte.html" class="btn-outline" style="font-size:.95rem;padding:14px 22px;">Como funciona</a>
+    </div>
+    <div style="display:flex;gap:36px;margin-top:40px;">
+      <div><strong style="font-size:1.6rem;font-weight:700;display:block;">500+</strong><small style="color:var(--text3);font-size:.82rem;">Produtos</small></div>
+      <div><strong style="font-size:1.6rem;font-weight:700;display:block;">1–3h</strong><small style="color:var(--text3);font-size:.82rem;">Entrega média</small></div>
+      <div><strong style="font-size:1.6rem;font-weight:700;display:block;">4.9 ⭐</strong><small style="color:var(--text3);font-size:.82rem;">Avaliação</small></div>
+    </div>
+  </div>
+  <div class="hero-img-desktop">
+    <img src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=900&q=80" alt="Entrega">
+  </div>
+</div>
+
+<!-- STATS (mobile) -->
+<div class="stats-row">
+  <div class="stat-pill"><span class="ico">📦</span><div><strong>500+</strong><small>Produtos</small></div></div>
+  <div class="stat-pill"><span class="ico">⚡</span><div><strong>1–3h</strong><small>Entrega média</small></div></div>
+  <div class="stat-pill"><span class="ico">⭐</span><div><strong>4.9</strong><small>Avaliação</small></div></div>
+  <div class="stat-pill"><span class="ico">🛡️</span><div><strong>Seguro</strong><small>Garantido</small></div></div>
+</div>
+
+<!-- CATEGORIES -->
+<section class="section" id="categorias">
+  <div class="sec-head">
+    <h2>Categorias</h2>
+    <a href="#produtos">Ver tudo →</a>
+  </div>
+  <div class="cat-scroll">
+    <div class="cat-card" style="flex-shrink:0;width:120px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#eee;position:relative;">
+      <img src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=300&q=80" style="width:100%;height:100%;object-fit:cover;filter:brightness(.72);" alt="Electrónica">
+      <div class="cat-info" style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.65),transparent);">
+        <strong style="font-size:.8rem;font-weight:600;color:#fff;display:block;">Electrónica</strong>
+        <small style="font-size:.68rem;color:rgba(255,255,255,.7);">120+ itens</small>
+      </div>
+    </div>
+    <div class="cat-card" style="flex-shrink:0;width:120px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#eee;position:relative;">
+      <img src="https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=300&q=80" style="width:100%;height:100%;object-fit:cover;filter:brightness(.72);" alt="Moda">
+      <div class="cat-info" style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.65),transparent);">
+        <strong style="font-size:.8rem;font-weight:600;color:#fff;display:block;">Moda</strong>
+        <small style="font-size:.68rem;color:rgba(255,255,255,.7);">85+ itens</small>
+      </div>
+    </div>
+    <div class="cat-card" style="flex-shrink:0;width:120px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#eee;position:relative;">
+      <img src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=300&q=80" style="width:100%;height:100%;object-fit:cover;filter:brightness(.72);" alt="Beleza">
+      <div class="cat-info" style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.65),transparent);">
+        <strong style="font-size:.8rem;font-weight:600;color:#fff;display:block;">Beleza</strong>
+        <small style="font-size:.68rem;color:rgba(255,255,255,.7);">60+ itens</small>
+      </div>
+    </div>
+    <div class="cat-card" style="flex-shrink:0;width:120px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#eee;position:relative;">
+      <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=300&q=80" style="width:100%;height:100%;object-fit:cover;filter:brightness(.72);" alt="Casa">
+      <div class="cat-info" style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.65),transparent);">
+        <strong style="font-size:.8rem;font-weight:600;color:#fff;display:block;">Casa</strong>
+        <small style="font-size:.68rem;color:rgba(255,255,255,.7);">70+ itens</small>
+      </div>
+    </div>
+    <div class="cat-card" style="flex-shrink:0;width:120px;border-radius:14px;overflow:hidden;aspect-ratio:3/4;background:#eee;position:relative;">
+      <img src="https://images.unsplash.com/photo-1547592180-85f173990554?w=300&q=80" style="width:100%;height:100%;object-fit:cover;filter:brightness(.72);" alt="Alimentação">
+      <div class="cat-info" style="position:absolute;bottom:0;left:0;right:0;padding:8px 10px;background:linear-gradient(to top,rgba(0,0,0,.65),transparent);">
+        <strong style="font-size:.8rem;font-weight:600;color:#fff;display:block;">Alimentação</strong>
+        <small style="font-size:.68rem;color:rgba(255,255,255,.7);">45+ itens</small>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section bg2" id="produtos">
+  <div class="sec-head">
+    <h2>Produtos</h2>
+    <span id="prodCount">8 itens</span>
+  </div>
+  <div class="filter-row">
+    <button class="chip active" onclick="filter(this,'todos')">Todos</button>
+    <button class="chip" onclick="filter(this,'electro')">Electrónica</button>
+    <button class="chip" onclick="filter(this,'moda')">Moda</button>
+    <button class="chip" onclick="filter(this,'beleza')">Beleza</button>
+    <button class="chip" onclick="filter(this,'casa')">Casa</button>
+  </div>
+  <div class="prod-grid" id="prodGrid">
+
+    <div class="prod-card" data-cat="electro">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e?w=400&q=80" alt="Auriculares">
+        <span class="prod-badge">Oferta</span>
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Electrónica</div>
+        <div class="prod-name">Auriculares Bluetooth</div>
+        <div class="prod-foot">
+          <div class="prod-price">1.200 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="moda">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&q=80" alt="Sapatilhas">
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Moda</div>
+        <div class="prod-name">Sapatilhas Sport</div>
+        <div class="prod-foot">
+          <div class="prod-price">2.500 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="electro">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1546868871-7041f2a55e12?w=400&q=80" alt="Smartwatch">
+        <span class="prod-badge">Top</span>
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Electrónica</div>
+        <div class="prod-name">Smartwatch Fitness</div>
+        <div class="prod-foot">
+          <div class="prod-price">3.800 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="beleza">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?w=400&q=80" alt="Perfume">
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Beleza</div>
+        <div class="prod-name">Perfume Luxo</div>
+        <div class="prod-foot">
+          <div class="prod-price">850 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="electro">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=400&q=80" alt="Câmara">
+        <span class="prod-badge">Novo</span>
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Electrónica</div>
+        <div class="prod-name">Câmara 4K Mini</div>
+        <div class="prod-foot">
+          <div class="prod-price">5.200 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="casa">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?w=400&q=80" alt="Sofá">
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Casa</div>
+        <div class="prod-name">Sofá 3 Lugares</div>
+        <div class="prod-foot">
+          <div class="prod-price">18.000 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="moda">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=400&q=80" alt="Mochila">
+        <span class="prod-badge">Oferta</span>
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Moda</div>
+        <div class="prod-name">Mochila Premium</div>
+        <div class="prod-foot">
+          <div class="prod-price">1.700 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="prod-card" data-cat="beleza">
+      <div class="prod-img-wrap">
+        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=400&q=80" alt="Maquiagem">
+        <button class="fav-btn" onclick="fav(this)">🤍</button>
+      </div>
+      <div class="prod-body">
+        <div class="prod-cat">Beleza</div>
+        <div class="prod-name">Kit Maquiagem</div>
+        <div class="prod-foot">
+          <div class="prod-price">1.100 <small>MZN</small></div>
+          <button class="add-btn" onclick="add(this)">+</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="contact-section">
+  <div class="contact-banner">
+    <h2>Pronto para encomendar?</h2>
+    <p>Fale connosco pelo WhatsApp e receba hoje!</p>
+    <div class="contact-links">
+      <a href="https://wa.me/258856206326" target="_blank" class="contact-link">
+        <div class="c-icon">💬</div>
+        <div><strong>WhatsApp</strong><span>856 206 326</span></div>
+      </a>
+      <a href="tel:+258856206326" class="contact-link">
+        <div class="c-icon">📞</div>
+        <div><strong>Ligar agora</strong><span>+258 856 206 326</span></div>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">Moz<span>Delivery</span></div>
+      <p style="max-width:280px;">A sua loja de confiança em Nampula. Produtos de qualidade entregues na sua porta.</p>
+    </div>
+    <div>
+      <p style="font-weight:600;margin-bottom:14px;font-size:.9rem;">Páginas</p>
+      <div class="footer-links" style="flex-direction:column;gap:10px;">
+        <a href="index.html">Início</a>
+        <a href="sobre.html">Sobre nós</a>
+        <a href="suporte.html">Suporte</a>
+      </div>
+    </div>
+    <div>
+      <p style="font-weight:600;margin-bottom:14px;font-size:.9rem;">Categorias</p>
+      <div class="footer-links" style="flex-direction:column;gap:10px;">
+        <a href="#">Electrónica</a>
+        <a href="#">Moda</a>
+        <a href="#">Beleza</a>
+        <a href="#">Casa</a>
+      </div>
+    </div>
+    <div>
+      <p style="font-weight:600;margin-bottom:14px;font-size:.9rem;">Contacto</p>
+      <div class="footer-links" style="flex-direction:column;gap:10px;">
+        <a href="https://wa.me/258856206326">💬 WhatsApp</a>
+        <a href="tel:+258856206326">📞 856 206 326</a>
+        <a href="#">📍 Nampula</a>
+      </div>
+    </div>
+  </div>
+  <!-- mobile footer -->
+  <div class="footer-logo" style="display:block;">Moz<span>Delivery</span></div>
+  <p>A sua loja de confiança em Nampula.</p>
+  <div class="footer-links">
+    <a href="index.html">Início</a>
+    <a href="sobre.html">Sobre nós</a>
+    <a href="suporte.html">Suporte</a>
+    <a href="https://wa.me/258856206326">WhatsApp</a>
+  </div>
+  <p class="copy">© 2025 MozDelivery · Nampula, Moçambique</p>
+</footer>
+
+<a href="https://wa.me/258856206326" class="wa-float" target="_blank">💬</a>
+
+<nav class="bottom-nav">
+  <button class="bn-item active" onclick="goTo('index.html')"><span class="bn-icon">🏠</span>Início</button>
+  <button class="bn-item" onclick="goTo('sobre.html')"><span class="bn-icon">ℹ️</span>Sobre</button>
+  <button class="bn-item" onclick="goTo('suporte.html')"><span class="bn-icon">🎧</span>Suporte</button>
+  <button class="bn-item" onclick="openCart()"><span class="bn-icon">🛒</span>Carrinho</button>
+</nav>
+
+<div class="toast" id="toast"></div>
+
+<script>
+  let cartItems = 0;
+  function add(btn) {
+    cartItems++;
+    document.getElementById('cartDot').classList.add('show');
+    showToast('Produto adicionado ✓');
+    btn.style.transform='scale(.82)';
+    setTimeout(()=>btn.style.transform='',150);
+  }
+  function fav(btn) {
+    btn.textContent = btn.textContent==='🤍'?'❤️':'🤍';
+    if(btn.textContent==='❤️') showToast('Adicionado aos favoritos ❤️');
+  }
+  function filter(el,cat) {
+    document.querySelectorAll('.chip').forEach(c=>c.classList.remove('active'));
+    el.classList.add('active');
+    let v=0;
+    document.querySelectorAll('.prod-card').forEach(c=>{
+      const show=cat==='todos'||c.dataset.cat===cat;
+      c.style.display=show?'':'none';
+      if(show)v++;
+    });
+    document.getElementById('prodCount').textContent=v+' itens';
+  }
+  function openCart() {
+    if(cartItems===0){showToast('Carrinho vazio — adicione produtos!');return;}
+    window.open('https://wa.me/258856206326?text=Olá!%20Quero%20encomendar%20'+cartItems+'%20produto(s).','_blank');
+  }
+  function showToast(msg) {
+    const t=document.getElementById('toast');
+    t.textContent=msg; t.classList.add('show');
+    setTimeout(()=>t.classList.remove('show'),2200);
+  }
+  function goTo(url){ window.location.href=url; }
+</script>
+</body>
+</html>
